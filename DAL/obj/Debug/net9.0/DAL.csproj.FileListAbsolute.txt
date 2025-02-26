@@ -1,0 +1,15 @@
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/bin/Debug/net9.0/DAL.deps.json
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/bin/Debug/net9.0/DAL.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/bin/Debug/net9.0/DAL.pdb
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.AssemblyInfoInputs.cache
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.AssemblyInfo.cs
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.csproj.CoreCompileInputs.cache
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/refint/DAL.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.pdb
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/ref/DAL.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/bin/Debug/net9.0/Utils.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/bin/Debug/net9.0/Utils.pdb
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.csproj.AssemblyReference.cache
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.csproj.Up2Date

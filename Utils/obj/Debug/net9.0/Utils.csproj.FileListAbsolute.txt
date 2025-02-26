@@ -1,0 +1,12 @@
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/bin/Debug/net9.0/Utils.deps.json
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/bin/Debug/net9.0/Utils.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/bin/Debug/net9.0/Utils.pdb
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/Utils.csproj.AssemblyReference.cache
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/Utils.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/Utils.AssemblyInfoInputs.cache
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/Utils.AssemblyInfo.cs
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/Utils.csproj.CoreCompileInputs.cache
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/Utils.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/refint/Utils.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/Utils.pdb
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/ref/Utils.dll
