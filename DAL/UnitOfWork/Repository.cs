@@ -11,23 +11,23 @@ public class Repository<TEntity>(DBContext context) : IRepository<TEntity>
 
     public IEnumerable<TEntity> FilterBy(Expression<Func<TEntity, bool>> filterExpression)
     {
-        throw new NotImplementedException();
+        return _collection.Find(filterExpression).ToEnumerable();
     }
 
     public IEnumerable<TProjected> FilterBy<TProjected>(Expression<Func<TEntity, bool>> filterExpression, Expression<Func<TEntity, TProjected>> projectionExpression)
     {
-        throw new NotImplementedException();
+        return _collection.Find(filterExpression).Project(projectionExpression).ToEnumerable();
     }
 
-    public Task<TEntity> FindOneAsync(Expression<Func<TEntity, bool>> filterExpression)
+    public async Task<TEntity> FindOneAsync(Expression<Func<TEntity, bool>> filterExpression)
     {
-        throw new NotImplementedException();
+        return await _collection.Find(filterExpression).FirstOrDefaultAsync();
     }
 
-    public Task<TEntity> FindByIdAsync(string id)
+    public async Task<TEntity> FindByIdAsync(string id)
     {
         var filter = Builders<TEntity>.Filter.Eq(doc => doc.ID, id);
-        return _collection.Find(filter).FirstOrDefaultAsync();
+        return await _collection.Find(filter).FirstOrDefaultAsync();
     }
 
     public async Task<TEntity> InsertOneAsync(TEntity document)
@@ -37,18 +37,33 @@ public class Repository<TEntity>(DBContext context) : IRepository<TEntity>
         return document;
     }
 
-    public Task<TEntity> UpdateOneAsync(TEntity document)
+    public async Task<TEntity> UpdateOneAsync(TEntity document)
     {
-        throw new NotImplementedException();
+        var filter = Builders<TEntity>.Filter.Eq(doc => doc.ID, document.ID);
+        await _collection.ReplaceOneAsync(filter, document);
+        return document;
     }
 
-    public Task<TEntity> InsertOrUpdateOneAsync(TEntity document)
+    public async Task<TEntity> InsertOrUpdateOneAsync(TEntity document)
     {
-        throw new NotImplementedException();
+        var filter = Builders<TEntity>.Filter.Eq(doc => doc.ID, document.ID);
+        var existingDocument = await _collection.Find(filter).FirstOrDefaultAsync();
+
+        if (existingDocument == null)
+        {
+            document.ID = document.GenerateNewID();
+            await _collection.InsertOneAsync(document);
+        }
+        else
+        {
+            await _collection.ReplaceOneAsync(filter, document);
+        }
+
+        return document;
     }
 
-    public Task DeleteOneAsync(Expression<Func<TEntity, bool>> filterExpression)
+    public async Task DeleteOneAsync(Expression<Func<TEntity, bool>> filterExpression)
     {
-        throw new NotImplementedException();
+        await _collection.DeleteOneAsync(filterExpression);
     }
 }

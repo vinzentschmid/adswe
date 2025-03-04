@@ -13,3 +13,4 @@
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/bin/Debug/net9.0/Utils.pdb
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.csproj.AssemblyReference.cache
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.csproj.Up2Date
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/obj/Debug/net9.0/DAL.sourcelink.json

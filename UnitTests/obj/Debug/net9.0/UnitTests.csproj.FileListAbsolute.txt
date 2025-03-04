@@ -126,3 +126,4 @@
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/SharpCompress.dll
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Snappier.dll
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/ZstdSharp.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/obj/Debug/net9.0/UnitTests.sourcelink.json

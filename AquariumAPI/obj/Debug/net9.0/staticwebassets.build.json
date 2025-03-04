@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5vOPhzYpdrD+ksP/rHRQnxHTWZqvDHXixKPkvbsb5Nk=",
+  "Source": "AquariumAPI",
+  "BasePath": "_content/AquariumAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
