@@ -10,3 +10,4 @@
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/refint/Utils.dll
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/Utils.pdb
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/ref/Utils.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/obj/Debug/net9.0/Utils.sourcelink.json

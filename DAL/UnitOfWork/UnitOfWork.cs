@@ -17,7 +17,8 @@ public class UnitOfWork : IUnitOfWork
     public IAquariumRepository AquariumRepository => new AquariumRepository(Context);
     
     public IAquariumItemRepository AquariumItemRepository => new AquariumItemRepository(Context);
-    
+    public IRepository<UserAquarium> UserAquariumRepository => new Repository<UserAquarium>(Context);
+
     public IUserRepository UserRepository => new UserRepository(Context, new PasswordHasher());
 
 }

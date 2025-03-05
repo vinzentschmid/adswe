@@ -127,3 +127,15 @@
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Snappier.dll
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/ZstdSharp.dll
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/obj/Debug/net9.0/UnitTests.sourcelink.json
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/AquariumAPI.deps.json
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/AquariumAPI.runtimeconfig.json
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/appsettings.Development.json
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/appsettings.json
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/AquariumAPI.staticwebassets.endpoints.json
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/AquariumAPI
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/AquariumAPI.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Services.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/AquariumAPI.pdb
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Services.pdb

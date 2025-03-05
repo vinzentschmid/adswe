@@ -11,5 +11,7 @@ public interface IUnitOfWork
     IUserRepository UserRepository { get; }
     
     IAquariumItemRepository AquariumItemRepository { get; }
+    
+    IRepository<UserAquarium> UserAquariumRepository { get; }
 
 }

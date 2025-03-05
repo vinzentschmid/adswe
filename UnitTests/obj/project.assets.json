@@ -280,6 +280,25 @@
           }
         }
       },
+      "Microsoft.AspNetCore.OpenApi/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.3.0": {
         "type": "package",
         "dependencies": {
@@ -655,6 +674,19 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.TestPlatform.ObjectModel/17.8.0": {
@@ -1488,6 +1520,22 @@
           "lib/net7.0/ZstdSharp.dll": {}
         }
       },
+      "AquariumAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "9.0.2"
+        },
+        "compile": {
+          "bin/placeholder/AquariumAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AquariumAPI.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1500,6 +1548,20 @@
         },
         "runtime": {
           "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
         }
       },
       "Utils/1.0.0": {
@@ -1798,6 +1860,22 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.xml",
         "microsoft.aspnetcore.mvc.core.2.3.0.nupkg.sha512",
         "microsoft.aspnetcore.mvc.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.OpenApi/9.0.2": {
+      "sha512": "JUndpjRNdG8GvzBLH/J4hen4ehWaPcshtiQ6+sUs1Bcj3a7dOsmWpDloDlpPeMOVSlhHwUJ3Xld0ClZjsFLgFQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
     "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.3.0": {
@@ -2472,6 +2550,21 @@
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
       ]
     },
     "Microsoft.TestPlatform.ObjectModel/17.8.0": {
@@ -3670,10 +3763,20 @@
         "zstdsharp.port.nuspec"
       ]
     },
+    "AquariumAPI/1.0.0": {
+      "type": "project",
+      "path": "../AquariumAPI/AquariumAPI.csproj",
+      "msbuildProject": "../AquariumAPI/AquariumAPI.csproj"
+    },
     "DAL/1.0.0": {
       "type": "project",
       "path": "../DAL/DAL.csproj",
       "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     },
     "Utils/1.0.0": {
       "type": "project",
@@ -3683,6 +3786,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "AquariumAPI >= 1.0.0",
       "DAL >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Core >= 2.3.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
@@ -3690,6 +3794,7 @@
       "NUnit >= 3.14.0",
       "NUnit.Analyzers >= 3.9.0",
       "NUnit3TestAdapter >= 4.5.0",
+      "Services >= 1.0.0",
       "Utils >= 1.0.0",
       "coverlet.collector >= 6.0.0"
     ]
@@ -3719,8 +3824,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/AquariumAPI.csproj": {
+              "projectPath": "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/AquariumAPI.csproj"
+            },
             "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/DAL.csproj": {
               "projectPath": "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/DAL.csproj"
+            },
+            "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/Services.csproj": {
+              "projectPath": "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/Services.csproj"
             },
             "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/Utils.csproj": {
               "projectPath": "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/Utils.csproj"
