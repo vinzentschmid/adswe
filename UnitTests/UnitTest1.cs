@@ -35,8 +35,6 @@ public class Tests
         SettingsHandler = serviceProvider.GetRequiredService<ISettingsHandler>();
         
         await SettingsHandler.Load();
-      
-  
 
         AquariumLogger = new AquariumLogger(Settings);
         await AquariumLogger.Initialize();
@@ -292,10 +290,98 @@ public class Tests
         Assert.That(filteredDocuments.Count(), Is.EqualTo(1));
         Assert.That(filteredDocuments.Any(d => d.Name == "TestAquarium2" && d.Liters == 720), Is.True);
     }
+    [Test]
+    public async Task Login_ValidCredentials_ReturnsUser()
+    {
+        // Arrange
+        var username = "test@example.com";
+        var password = "password";
+        var hashedPassword = PasswordHasher.Hash(password);
+        var user = new User { Email = username, HashedPassword = hashedPassword };
+
+        // Insert the user into the database
+        await UnitOfWork.UserRepository.InsertOneAsync(user);
+
+        // Act
+        var result = await UnitOfWork.UserRepository.Login(username, password);
+
+        // Assert
+        Assert.IsNotNull(result);
+        Assert.AreEqual(username, result.Email);
+    }
+    [Test]
+    public async Task Login_InvalidCredentials_ThrowsUnauthorizedAccessException()
+    {
+        // Arrange
+        var username = "test@example.com";
+        var password = "password";
+        var hashedPassword = PasswordHasher.Hash(password);
+        var user = new User { Email = username, HashedPassword = hashedPassword };
+
+        // Insert the user into the database
+        await UnitOfWork.UserRepository.InsertOneAsync(user);
+
+        // Act & Assert
+        Assert.ThrowsAsync<UnauthorizedAccessException>(() => UnitOfWork.UserRepository.Login(username, "wrongpassword"));
+    }
+    [Test]
+    public async Task GetByName_ValidName_ReturnsAquarium()
+    {
+        // Arrange
+        var name = "Ocean World";
+        var aquarium = new Aquarium { Name = name };
+
+        // Insert the aquarium into the database
+        await UnitOfWork.AquariumRepository.InsertOneAsync(aquarium);
+
+        // Act
+        var result = await UnitOfWork.AquariumRepository.GetByName(name);
+
+        // Assert
+        Assert.IsNotNull(result);
+        Assert.That(result.Name, Is.EqualTo(name));
+    }
+    
+    [Test]
+    public async Task GetCorals_ReturnsCorals()
+    {
+        // Arrange
+        var coral = new Coral { Name = "Coral1", CoralType = CoralType.SoftCoral };
+        await UnitOfWork.AquariumItemRepository.InsertOneAsync(coral);
+
+        // Act
+        var result = UnitOfWork.AquariumItemRepository.GetCorals();
+
+        // Assert
+        Assert.IsNotNull(result);
+        Assert.IsNotEmpty(result);
+        Assert.IsInstanceOf<List<Coral>>(result);
+        Assert.That(result[0].Name, Is.EqualTo(coral.Name));
+    }
+    [Test]
+    public async Task GetAnimals_ReturnsAnimals()
+    {
+        // Arrange
+        var animal = new Animal { Name = "Animal1", IsAlive = true };
+        await UnitOfWork.AquariumItemRepository.InsertOneAsync(animal);
+
+        // Act
+        var result = UnitOfWork.AquariumItemRepository.GetAnimals();
+
+        // Assert
+        Assert.IsNotNull(result);
+        Assert.IsNotEmpty(result);
+        Assert.IsInstanceOf<List<Animal>>(result);
+        Assert.That(result[0].Name, Is.EqualTo(animal.Name));
+    }
     [TearDown]
     public async Task Teardown()
     {
-        Expression<Func<Aquarium, bool>> filterExpression = x => true;
-        await UnitOfWork.AquariumRepository.DeleteOneAsync(filterExpression);
+        Expression<Func<Aquarium, bool>> filterExpressionAquarium = x => true;
+        await UnitOfWork.AquariumRepository.DeleteOneAsync(filterExpressionAquarium);
+        Expression<Func<User, bool>> filterExpressionUser = x => true;
+        await UnitOfWork.UserRepository.DeleteOneAsync(filterExpressionUser);
+        Expression<Func<AquariumItem, bool>> filterExpressionAquariumItem = x => true;
+        await UnitOfWork.AquariumItemRepository.DeleteOneAsync(filterExpressionAquariumItem);
     }
 }

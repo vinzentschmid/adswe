@@ -7,4 +7,9 @@ public interface IUnitOfWork
     DBContext Context { get; }
     
     IAquariumRepository AquariumRepository { get; }
+    
+    IUserRepository UserRepository { get; }
+    
+    IAquariumItemRepository AquariumItemRepository { get; }
+
 }
