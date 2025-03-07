@@ -31,7 +31,7 @@ public class AuthenticationTests : BaseTest
         var result = await UnitOfWork.UserRepository.Login(username, password);
 
         // Assert
-        Assert.IsNotNull(result);
+        Assert.That(result, Is.Not.Null);
         Assert.That(result.Email, Is.EqualTo(username));
     }
     

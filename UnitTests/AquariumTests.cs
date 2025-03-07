@@ -48,7 +48,7 @@ public class AquariumTests : BaseTest
 
         // Assert
         var result = await UnitOfWork.AquariumRepository.FindOneAsync(filterExpression);
-        Assert.IsNull(result);
+        Assert.That(result, Is.Null);
     }
     [Test]
     public async Task InsertOrUpdateOneAsync_ShouldInsertOrUpdateDocument()
@@ -130,8 +130,11 @@ public class AquariumTests : BaseTest
 
         // Assert
         Assert.That(retrievedDocument, Is.Not.Null);
-        Assert.That(retrievedDocument.ID, Is.EqualTo(insertedDocument.ID));
-        Assert.That(retrievedDocument.Name, Is.EqualTo(insertedDocument.Name));
+        Assert.Multiple(() =>
+        {
+            Assert.That(retrievedDocument.ID, Is.EqualTo(insertedDocument.ID));
+            Assert.That(retrievedDocument.Name, Is.EqualTo(insertedDocument.Name));
+        });
     }
     [Test]
     public async Task FindOneAsync_ShouldReturnDocument()
@@ -154,8 +157,11 @@ public class AquariumTests : BaseTest
 
         // Assert
         Assert.That(retrievedDocument, Is.Not.Null);
-        Assert.That(retrievedDocument.ID, Is.EqualTo(document.ID));
-        Assert.That(retrievedDocument.Name, Is.EqualTo(document.Name));
+        Assert.Multiple(() =>
+        {
+            Assert.That(retrievedDocument.ID, Is.EqualTo(document.ID));
+            Assert.That(retrievedDocument.Name, Is.EqualTo(document.Name));
+        });
     }
     
     [Test]
@@ -189,9 +195,10 @@ public class AquariumTests : BaseTest
         var projectedDocuments = UnitOfWork.AquariumRepository.FilterBy(filterExpression, projectionExpression);
 
         // Assert
-        Assert.That(projectedDocuments, Is.Not.Null);
-        Assert.That(projectedDocuments.Any(d => d.Name == "TestAquarium1" && d.Liters == 572), Is.True);
-        Assert.That(projectedDocuments.Any(d => d.Name == "TestAquarium2" && d.Liters == 720), Is.True);
+        var enumerable = projectedDocuments as dynamic[] ?? projectedDocuments.ToArray();
+        Assert.That(enumerable, Is.Not.Null);
+        Assert.That(enumerable.Any(d => d.Name == "TestAquarium1" && d.Liters == 572), Is.True);
+        Assert.That(enumerable.Any(d => d.Name == "TestAquarium2" && d.Liters == 720), Is.True);
     }
     
     [Test]
@@ -224,9 +231,10 @@ public class AquariumTests : BaseTest
         var filteredDocuments = UnitOfWork.AquariumRepository.FilterBy(filterExpression);
 
         // Assert
-        Assert.That(filteredDocuments, Is.Not.Null);
+        var enumerable = filteredDocuments as Aquarium[] ?? filteredDocuments.ToArray();
+        Assert.That(enumerable, Is.Not.Null);
         //Assert.That(filteredDocuments.Count(), Is.EqualTo(1));
-        Assert.That(filteredDocuments.Any(d => d.Name == "TestAquarium2" && d.Liters == 720), Is.True);
+        Assert.That(enumerable.Any(d => d is { Name: "TestAquarium2", Liters: 720 }), Is.True);
     }
     
     [Test]
@@ -242,13 +250,13 @@ public class AquariumTests : BaseTest
             WaterType = WaterType.Freshwater
         };
 
-        AquariumService service = new AquariumService(UnitOfWork, UnitOfWork.AquariumRepository);
+        var service = new AquariumService(UnitOfWork, UnitOfWork.AquariumRepository);
         await service.Load("test@example.com");
         
         var modelState = new Mock<ModelStateDictionary>();
         await service.SetModelState(modelState.Object);
         
-        ItemResponseModel<Aquarium> model = await service.Create(document);
+        var model = await service.Create(document);
         
         Assert.That(model.HasError, Is.False);
     }
@@ -257,7 +265,7 @@ public class AquariumTests : BaseTest
     public async Task GetByName_ValidName_ReturnsAquarium()
     {
         // Arrange
-        var name = "Ocean World";
+        const string name = "Ocean World";
         var aquarium = new Aquarium { Name = name };
 
         // Insert the aquarium into the database
