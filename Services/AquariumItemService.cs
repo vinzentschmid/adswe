@@ -19,66 +19,54 @@ public abstract class AquariumItemService(IUnitOfWork unitOfWork, IRepository<Aq
 
     public override async Task<ItemResponseModel<AquariumItem>> Create(AquariumItem entry)
     {
-        ItemResponseModel<AquariumItem> response = new ItemResponseModel<AquariumItem>();
-
-        if (await Validate(entry))
-        {
-            AquariumItem data = await Repository.InsertOneAsync(entry);
-            response.Data = data;
-        }
-        else
-        {
-            response.ErrorMessages = ValidationDictionary.Errors;
-        }
-
-        return response;
+        return await AddAquariumItem(entry);
     }
 
     public override async Task<ItemResponseModel<AquariumItem>> Update(string id, AquariumItem entry)
     {
-        ItemResponseModel<AquariumItem> response = new ItemResponseModel<AquariumItem>();
-
-        if (await Validate(entry))
+        if (!await Validate(entry))
         {
-            AquariumItem existingItem = await Repository.FindByIdAsync(id);
-            if (existingItem != null)
+            return new ItemResponseModel<AquariumItem>
             {
-                existingItem.Name = entry.Name;
-                existingItem.Species = entry.Species;
-                existingItem.Amount = entry.Amount;
-                existingItem.Description = entry.Description;
-                existingItem.Aquarium = entry.Aquarium;
-
-                await Repository.InsertOrUpdateOneAsync(existingItem);
-                response.Data = existingItem;
-            }
-            else
-            {
-                response.ErrorMessages.Add("NotFound", "Aquarium item not found.");
-            }
-        }
-        else
-        {
-            response.ErrorMessages = ValidationDictionary.Errors;
+                Success = false,
+                ErrorMessages = ValidationDictionary.Errors
+            };
         }
 
-        return response;
+        var existingItem = await Repository.FindByIdAsync(id);
+        if (existingItem == null)
+        {
+            return new ItemResponseModel<AquariumItem>
+            {
+                Success = false,
+                ErrorMessages = { { "NotFound", "Aquarium item not found." } }
+            };
+        }
+
+        // Werte aktualisieren
+        existingItem.Name = entry.Name;
+        existingItem.Species = entry.Species;
+        existingItem.Amount = entry.Amount;
+        existingItem.Description = entry.Description;
+        existingItem.Aquarium = entry.Aquarium;
+
+        await Repository.UpdateOneAsync(existingItem);
+
+        return new ItemResponseModel<AquariumItem> { Data = existingItem };
     }
 
     protected async Task<ItemResponseModel<AquariumItem>> AddAquariumItem(AquariumItem entry)
     {
-        ItemResponseModel<AquariumItem> response = new ItemResponseModel<AquariumItem>();
-
-        if (await Validate(entry))
+        if (!await Validate(entry))
         {
-            AquariumItem data = await Repository.InsertOneAsync(entry);
-            response.Data = data;
-        }
-        else
-        {
-            response.ErrorMessages = ValidationDictionary.Errors;
+            return new ItemResponseModel<AquariumItem>
+            {
+                Success = false,
+                ErrorMessages = ValidationDictionary.Errors
+            };
         }
 
-        return response;
+        var data = await Repository.InsertOneAsync(entry);
+        return new ItemResponseModel<AquariumItem> { Data = data };
     }
 }

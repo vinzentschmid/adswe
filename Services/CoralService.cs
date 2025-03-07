@@ -4,18 +4,33 @@ using Services.Models;
 
 namespace Services;
 
-public class CoralService(IUnitOfWork unitOfWork, IRepository<AquariumItem> repository) : AquariumItemService(unitOfWork, repository)
+public class CoralService : AquariumItemService
 {
+    public CoralService(IUnitOfWork unitOfWork, IRepository<AquariumItem> repository) 
+        : base(unitOfWork, repository) { }
+
     public async Task<ItemResponseModel<AquariumItem>> AddCoral(Coral entry)
     {
-        var response = await AddAquariumItem(entry);
-        return response;
+        return await AddAquariumItem(entry);
     }
+
     public async Task<ItemResponseModel<Coral>> GetCoral(string id)
     {
-        var coralItem = await Repository.FindByIdAsync(id);
-        
+        var coralItem = await Repository.FindByIdAsync(id) as Coral;
 
-        return new ItemResponseModel<Coral> { Data = (Coral)coralItem };
+        if (coralItem == null)
+        {
+            return new ItemResponseModel<Coral>
+            {
+                Success = false,
+                Message = $"Coral with ID {id} not found."
+            };
+        }
+
+        return new ItemResponseModel<Coral>
+        {
+            Success = true,
+            Data = coralItem
+        };
     }
 }

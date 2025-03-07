@@ -147,3 +147,6 @@
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
