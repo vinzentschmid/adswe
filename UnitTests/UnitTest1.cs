@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using Serilog;
 using Services;
+using Services.Authentication;
 using Services.Models;
 using Utils;
 
@@ -19,6 +20,7 @@ public class Tests
     private AquariumLogger AquariumLogger;
     private IPasswordHasher PasswordHasher;
     private IUnitOfWork UnitOfWork;
+    private IAuthentication Authentication;
     
     [SetUp]
     public async Task Setup()
@@ -29,6 +31,8 @@ public class Tests
         //serviceCollection.AddSingleton<ISettingsHandler, TestSettingsHandler>();
         serviceCollection.AddSingleton<IPasswordHasher, PasswordHasher>();
         serviceCollection.AddSingleton<ISettingsHandler, ConsulSettingsHandler>();
+        serviceCollection.AddSingleton<IAuthentication, Authentication>();
+
         serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
@@ -46,6 +50,8 @@ public class Tests
         //await AquariumLogger.Init();
         PasswordHasher = serviceProvider.GetRequiredService<IPasswordHasher>();
         UnitOfWork = serviceProvider.GetRequiredService<IUnitOfWork>();
+        Authentication = serviceProvider.GetRequiredService<IAuthentication>();
+
 
     }
 
@@ -438,6 +444,19 @@ public class Tests
         var result = await service.AddAnimal(document);
         
         Assert.That(result.HasError, Is.False);
+    }
+
+    [Test]
+    public async Task TestLogin()
+    {
+        UserService service = new UserService(UnitOfWork, UnitOfWork.UserRepository, Authentication);
+        LoginRequest request = new LoginRequest();
+        request.Password = "password";
+        request.Username = "test@example.com";
+        
+        var response = await service.Login(request);
+        
+        Assert.That(response.HasError, Is.False);
     }
     [TearDown]
     public async Task Teardown()

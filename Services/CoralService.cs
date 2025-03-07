@@ -14,13 +14,7 @@ public class CoralService(IUnitOfWork unitOfWork, IRepository<AquariumItem> repo
     public async Task<ItemResponseModel<Coral>> GetCoral(string id)
     {
         var coralItem = await Repository.FindByIdAsync(id);
-        if (coralItem == null)
-        {
-            return new ItemResponseModel<Coral>
-            {
-                ErrorMessages = new Dictionary<string, string> { { "NotFound", "Coral not found." } }
-            };
-        }
+        
 
         return new ItemResponseModel<Coral> { Data = (Coral)coralItem };
     }

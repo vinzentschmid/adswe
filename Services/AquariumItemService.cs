@@ -64,7 +64,8 @@ public abstract class AquariumItemService(IUnitOfWork unitOfWork, IRepository<Aq
 
         return response;
     }
-    public async Task<ItemResponseModel<AquariumItem>> AddAquariumItem(AquariumItem entry)
+
+    protected async Task<ItemResponseModel<AquariumItem>> AddAquariumItem(AquariumItem entry)
     {
         ItemResponseModel<AquariumItem> response = new ItemResponseModel<AquariumItem>();
 

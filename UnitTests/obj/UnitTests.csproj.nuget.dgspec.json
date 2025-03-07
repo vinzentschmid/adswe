@@ -25,7 +25,17 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/DAL.csproj": {
+                "projectPath": "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/DAL.csproj"
+              },
+              "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/Services.csproj": {
+                "projectPath": "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/Services.csproj"
+              },
+              "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/Utils.csproj": {
+                "projectPath": "/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Utils/Utils.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -47,6 +57,18 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[7.3.1, )"
             }
           },
           "imports": [
@@ -187,6 +209,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

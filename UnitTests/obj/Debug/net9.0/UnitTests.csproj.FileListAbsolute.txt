@@ -139,3 +139,11 @@
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Services.dll
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/AquariumAPI.pdb
 /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Services.pdb
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/vinzentschmid/Documents/ADSWE/AquariumAPI/UnitTests/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
