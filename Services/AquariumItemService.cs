@@ -9,9 +9,9 @@ public abstract class AquariumItemService(IUnitOfWork unitOfWork, IRepository<Aq
 {
     public override Task<bool> Validate(AquariumItem entry)
     {
-        if (string.IsNullOrEmpty(entry.Name))
+        if (entry.Name == "")
         {
-            ValidationDictionary.AddError("NameMissing", "Aquarium item name is required.");
+            throw new ArgumentNullException(nameof(entry), "Name is required.");
         }
 
         return Task.FromResult(ValidationDictionary.IsValid);
@@ -24,14 +24,6 @@ public abstract class AquariumItemService(IUnitOfWork unitOfWork, IRepository<Aq
 
     public override async Task<ItemResponseModel<AquariumItem>> Update(string id, AquariumItem entry)
     {
-        if (!await Validate(entry))
-        {
-            return new ItemResponseModel<AquariumItem>
-            {
-                Success = false,
-                ErrorMessages = ValidationDictionary.Errors
-            };
-        }
 
         var existingItem = await Repository.FindByIdAsync(id);
         if (existingItem == null)
@@ -57,16 +49,22 @@ public abstract class AquariumItemService(IUnitOfWork unitOfWork, IRepository<Aq
 
     protected async Task<ItemResponseModel<AquariumItem>> AddAquariumItem(AquariumItem entry)
     {
-        if (!await Validate(entry))
+        if (Repository == null)
         {
-            return new ItemResponseModel<AquariumItem>
-            {
-                Success = false,
-                ErrorMessages = ValidationDictionary.Errors
-            };
+            throw new InvalidOperationException("Repository is not initialized.");
         }
 
         var data = await Repository.InsertOneAsync(entry);
-        return new ItemResponseModel<AquariumItem> { Data = data };
+        
+        if (data == null)
+        {
+            throw new InvalidOperationException("Failed to insert the aquarium item.");
+        }
+
+        return new ItemResponseModel<AquariumItem>
+        {
+            Data = data,
+            Success = true
+        };
     }
 }

@@ -4,20 +4,11 @@ using Services.Authentication;
 
 namespace AquariumAPI;
 
-public class GlobalService : IGlobalService
+public class GlobalService(IUnitOfWork unitOfWork, IAuthentication authentication) : IGlobalService
 {
-    public AquariumService AquariumService { get; set; }
-    public UserService UserService { get; set; }
-    public CoralService CoralService { get; set; }
-    public AnimalService AnimalService { get; set; }
-    public IUnitOfWork UnitOfWork { get; set; }
-
-    public GlobalService(IUnitOfWork unitOfWork, IAuthentication authentication)
-    {
-        UnitOfWork = unitOfWork;
-        AquariumService = new AquariumService(unitOfWork, unitOfWork.AquariumRepository);
-        UserService = new UserService(unitOfWork, unitOfWork.UserRepository, authentication);
-        CoralService = new CoralService(unitOfWork, unitOfWork.AquariumItemRepository);
-        AnimalService = new AnimalService(unitOfWork, unitOfWork.AquariumItemRepository);
-    }
+    public AquariumService AquariumService { get; set; } = new(unitOfWork, unitOfWork.AquariumRepository);
+    public UserService UserService { get; set; } = new(unitOfWork, unitOfWork.UserRepository, authentication);
+    public CoralService CoralService { get; set; } = new(unitOfWork, unitOfWork.AquariumItemRepository);
+    public AnimalService AnimalService { get; set; } = new(unitOfWork, unitOfWork.AquariumItemRepository);
+    public IUnitOfWork UnitOfWork { get; set; } = unitOfWork;
 }

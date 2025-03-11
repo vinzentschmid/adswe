@@ -19,9 +19,9 @@ public class AquariumItemTests : BaseTest
         var result = UnitOfWork.AquariumItemRepository.GetCorals();
 
         // Assert
-        Assert.IsNotNull(result);
-        Assert.IsNotEmpty(result);
-        Assert.IsInstanceOf<List<Coral>>(result);
+        Assert.That(result, Is.Not.Null);
+        Assert.That(result, Is.Not.Empty);
+        Assert.That(result, Is.InstanceOf<List<Coral>>());
         //Assert.That(result[0].Name, Is.EqualTo(coral.Name));
     }
     [Test]
@@ -35,9 +35,10 @@ public class AquariumItemTests : BaseTest
         var result = UnitOfWork.AquariumItemRepository.GetAnimals();
 
         // Assert
-        Assert.IsNotNull(result);
-        Assert.IsNotEmpty(result);
-        Assert.IsInstanceOf<List<Animal>>(result);
+        
+        Assert.That(result, Is.Not.Null);
+        Assert.That(result, Is.Not.Empty);
+        Assert.That(result, Is.InstanceOf<List<Animal>>());
         Assert.That(result[0].Name, Is.EqualTo(animal.Name));
     }
     
@@ -57,8 +58,11 @@ public class AquariumItemTests : BaseTest
         
         var result = await service.AddCoral(document);
         var getCoral = await service.GetCoral(document.ID);
-        Assert.That(getCoral, Is.Not.Null);
-        Assert.That(result.HasError, Is.False);
+        Assert.Multiple(() =>
+        {
+            Assert.That(getCoral, Is.Not.Null);
+            Assert.That(result.HasError, Is.False);
+        });
     }
     
     [Test]
@@ -77,7 +81,10 @@ public class AquariumItemTests : BaseTest
         
         var result = await service.AddAnimal(document);
         var getAnimal = await service.GetAnimal(document.ID);
-        Assert.That(getAnimal, Is.Not.Null);
-        Assert.That(result.HasError, Is.False);
+        Assert.Multiple(() =>
+        {
+            Assert.That(getAnimal, Is.Not.Null);
+            Assert.That(result.HasError, Is.False);
+        });
     }
 }

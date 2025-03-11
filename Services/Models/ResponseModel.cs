@@ -2,7 +2,7 @@ namespace Services.Models;
 
 public class ResponseModel
 {
-    public Dictionary<String, String> ErrorMessages { get; set; } = new();
+    public Dictionary<string, string> ErrorMessages { get; set; } = new();
 
     public Boolean HasError
     {

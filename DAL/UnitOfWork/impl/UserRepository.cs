@@ -13,4 +13,8 @@ public class UserRepository(DBContext context, IPasswordHasher passwordHasher): 
         }
         return user;
     }
+    public async Task<User> FindByUsernameAsync(string username)
+    {
+        return await FindOneAsync(u => u.Email == username);
+    }
 }

@@ -275,7 +275,23 @@ public class AquariumTests : BaseTest
         var result = await UnitOfWork.AquariumRepository.GetByName(name);
 
         // Assert
-        Assert.IsNotNull(result);
+        Assert.That(result, Is.Not.Null);
         Assert.That(result.Name, Is.EqualTo(name));
     }
+    [Test]
+    public async Task GetAllAquariumsForUser_ReturnsAquariums()
+    {
+        // Arrange
+        var username = "test@example.com";
+        
+        var service = new AquariumService(UnitOfWork, UnitOfWork.AquariumRepository);
+
+        // Act
+        var result = await service.GetAllAquariumsForUser(username);
+
+        // Assert
+        Assert.That(result, Is.Not.Null);
+        
+    }
 }
+

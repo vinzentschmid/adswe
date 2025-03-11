@@ -4,11 +4,9 @@ using Services.Models;
 
 namespace Services;
 
-public class CoralService : AquariumItemService
+public class CoralService(IUnitOfWork unitOfWork, IRepository<AquariumItem> repository)
+    : AquariumItemService(unitOfWork, repository)
 {
-    public CoralService(IUnitOfWork unitOfWork, IRepository<AquariumItem> repository) 
-        : base(unitOfWork, repository) { }
-
     public async Task<ItemResponseModel<AquariumItem>> AddCoral(Coral entry)
     {
         return await AddAquariumItem(entry);

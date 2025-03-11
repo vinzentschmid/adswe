@@ -38,7 +38,7 @@ namespace Services.Authentication
                 {
                     Subject = new ClaimsIdentity(new Claim[]
                     {
-        
+                        new Claim(ClaimTypes.Email, usr.Email),
                     }),
                     Expires = expires,
                     Issuer = myIssuer,

@@ -1,0 +1,921 @@
+2025-03-11 14:39:08.753 +01:00 [INF] Logger initialized
+2025-03-11 14:40:14.649 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 14:40:35.840 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Services.IService`1[DAL.Aquarium]' while attempting to activate 'AquariumAPI.Controllers.AquariumController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method14(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 14:42:49.960 +01:00 [INF] Logger initialized
+2025-03-11 14:43:02.921 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 14:43:02.976 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Services.IService`1[DAL.Aquarium]' while attempting to activate 'AquariumAPI.Controllers.AquariumController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method14(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 14:43:11.426 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Services.IService`1[DAL.Aquarium]' while attempting to activate 'AquariumAPI.Controllers.AquariumController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method14(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 14:43:54.807 +01:00 [INF] Logger initialized
+2025-03-11 14:44:08.254 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 14:44:08.289 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Services.IService`1[DAL.Aquarium]' while attempting to activate 'AquariumAPI.Controllers.AquariumController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method14(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 14:55:05.835 +01:00 [INF] Logger initialized
+2025-03-11 14:55:26.196 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 14:55:26.318 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 15:02:27.589 +01:00 [INF] Logger initialized
+2025-03-11 16:12:37.097 +01:00 [INF] Logger initialized
+2025-03-11 16:13:38.046 +01:00 [INF] Logger initialized
+2025-03-11 16:14:17.275 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 16:14:17.409 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 16:18:32.788 +01:00 [INF] Logger initialized
+2025-03-11 16:18:43.615 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 16:18:43.740 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 16:18:43.914 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumService.Create(Aquarium entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumService.cs:line 38
+   at AquariumAPI.Controllers.AquariumController.CreateAquarium(Aquarium aquarium) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 28
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 16:32:52.012 +01:00 [INF] Logger initialized
+2025-03-11 16:33:15.292 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 16:33:15.422 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 16:33:33.683 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 16:33:33.822 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumService.Create(Aquarium entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumService.cs:line 38
+   at AquariumAPI.Controllers.AquariumController.CreateAquarium(Aquarium aquarium) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 35
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 16:38:47.443 +01:00 [INF] Logger initialized
+2025-03-11 16:39:04.230 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 16:39:04.353 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 16:39:04.524 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumService.Create(Aquarium entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumService.cs:line 38
+   at AquariumAPI.Controllers.AquariumController.CreateAquarium(CreateAquariumResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 43
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 16:46:06.084 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 16:55:43.096 +01:00 [INF] Logger initialized
+2025-03-11 16:56:11.281 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 16:56:11.408 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:20:56.763 +01:00 [INF] Logger initialized
+2025-03-11 18:21:09.383 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 18:21:09.531 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:27:15.086 +01:00 [INF] Logger initialized
+2025-03-11 18:27:15.172 +01:00 [FTL] Application startup exception
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2025-03-11 18:28:04.122 +01:00 [INF] Logger initialized
+2025-03-11 18:28:04.201 +01:00 [FTL] Application startup exception
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2025-03-11 18:28:57.971 +01:00 [INF] Logger initialized
+2025-03-11 18:28:58.048 +01:00 [FTL] Application startup exception
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2025-03-11 18:29:28.230 +01:00 [INF] Logger initialized
+2025-03-11 18:31:29.614 +01:00 [INF] Logger initialized
+2025-03-11 18:32:41.791 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 18:33:00.784 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:33:26.754 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:34:32.079 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:35:11.085 +01:00 [INF] Logger initialized
+2025-03-11 18:35:38.452 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 18:35:38.585 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:37:31.159 +01:00 [INF] Logger initialized
+2025-03-11 18:38:00.905 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 18:38:01.032 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:43:50.961 +01:00 [INF] Logger initialized
+2025-03-11 18:54:15.796 +01:00 [INF] Logger initialized
+2025-03-11 18:54:28.788 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 18:54:28.921 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:56:49.540 +01:00 [INF] Logger initialized
+2025-03-11 18:57:10.034 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 18:57:10.158 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:57:23.656 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:58:07.819 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:58:38.499 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:58:39.093 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:58:39.259 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:58:39.410 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:58:39.562 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:58:39.692 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 18:58:47.709 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:01:05.010 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:01:05.859 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:05:28.905 +01:00 [INF] Logger initialized
+2025-03-11 19:05:47.572 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 19:05:47.692 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:06:54.395 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:07:20.097 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:07:34.166 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:07:34.870 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:08:17.320 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:08:17.350 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:08:36.501 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:08:37.120 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:08:37.293 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 19:10:35.202 +01:00 [INF] Logger initialized
+2025-03-11 19:10:53.178 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 19:10:53.303 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:18:27.987 +01:00 [INF] Logger initialized
+2025-03-11 21:18:49.457 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:18:49.582 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:18:49.631 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 87
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:19:02.490 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:19:02.494 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 87
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:22:29.106 +01:00 [INF] Logger initialized
+2025-03-11 21:22:37.298 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:22:37.472 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:23:38.479 +01:00 [INF] Logger initialized
+2025-03-11 21:23:41.526 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:23:41.637 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:24:58.268 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:24:58.298 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 87
+   at lambda_method36(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:25:59.188 +01:00 [INF] Logger initialized
+2025-03-11 21:26:05.365 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:26:05.540 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:27:18.627 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 87
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:28:13.631 +01:00 [INF] Logger initialized
+2025-03-11 21:28:18.709 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:28:18.823 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:28:18.882 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 87
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:28:58.122 +01:00 [INF] Logger initialized
+2025-03-11 21:29:07.495 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:29:07.675 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:31:51.219 +01:00 [INF] Logger initialized
+2025-03-11 21:31:53.276 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:31:53.388 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:31:53.446 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 92
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:35:28.484 +01:00 [INF] Logger initialized
+2025-03-11 21:35:38.328 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:35:38.453 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:35:38.517 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 92
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:38:45.580 +01:00 [INF] Logger initialized
+2025-03-11 21:38:53.184 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:38:53.364 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:41:13.300 +01:00 [INF] Logger initialized
+2025-03-11 21:41:15.774 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:41:15.895 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:41:15.954 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 92
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:42:26.524 +01:00 [INF] Logger initialized
+2025-03-11 21:42:30.471 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:42:30.582 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:42:30.641 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 92
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:48:17.575 +01:00 [INF] Logger initialized
+2025-03-11 21:48:20.520 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:48:20.636 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:48:20.695 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 92
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:48:33.777 +01:00 [INF] Logger initialized
+2025-03-11 21:50:25.475 +01:00 [INF] Logger initialized
+2025-03-11 21:50:34.651 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:50:34.771 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:50:34.816 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 89
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:50:45.131 +01:00 [INF] Logger initialized
+2025-03-11 21:51:08.798 +01:00 [INF] Logger initialized
+2025-03-11 21:51:46.658 +01:00 [INF] Logger initialized
+2025-03-11 21:51:57.773 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:51:57.891 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:51:57.932 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 88
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:52:11.647 +01:00 [INF] Logger initialized
+2025-03-11 21:52:21.847 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:52:21.967 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:52:22.008 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 88
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:54:38.869 +01:00 [INF] Logger initialized
+2025-03-11 21:54:44.399 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:54:44.575 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:57:35.931 +01:00 [INF] Logger initialized
+2025-03-11 21:57:39.379 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:57:39.495 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:57:39.542 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 88
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:59:17.915 +01:00 [INF] Logger initialized
+2025-03-11 21:59:28.026 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 21:59:28.144 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:59:28.186 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 88
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 21:59:41.901 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 21:59:41.907 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateAnimal(AnimalResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 125
+   at lambda_method18(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 22:02:17.631 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:02:17.641 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.Update(String id, AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 27
+   at AquariumAPI.Controllers.AquariumController.UpdateCoral(String id, CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 106
+   at lambda_method26(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 22:03:13.505 +01:00 [INF] Logger initialized
+2025-03-11 22:03:28.712 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 22:03:28.837 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:03:28.878 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateAnimal(AnimalResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 125
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 22:04:04.128 +01:00 [INF] Logger initialized
+2025-03-11 22:04:14.772 +01:00 [INF] Logger initialized
+2025-03-11 22:04:21.850 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 22:04:22.030 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:04:22.248 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateAnimal(AnimalResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 125
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 22:04:33.269 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:06:58.195 +01:00 [INF] Logger initialized
+2025-03-11 22:07:06.840 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 22:07:07.023 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:07:11.982 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.AddAquariumItem(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 60
+   at Services.AquariumItemService.Create(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 22
+   at AquariumAPI.Controllers.AquariumController.CreateCoral(CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 88
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 22:07:18.356 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:08:12.866 +01:00 [INF] Logger initialized
+2025-03-11 22:08:13.625 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 22:08:13.815 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:09:11.839 +01:00 [INF] Logger initialized
+2025-03-11 22:09:15.541 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 22:09:15.655 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:09:34.829 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:09:34.836 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.AquariumItemService.Validate(AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 17
+   at Services.AquariumItemService.Update(String id, AquariumItem entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/AquariumItemService.cs:line 27
+   at AquariumAPI.Controllers.AquariumController.UpdateCoral(String id, CoralResource resource) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/AquariumController.cs:line 106
+   at lambda_method25(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 22:10:06.582 +01:00 [INF] Logger initialized
+2025-03-11 22:10:14.347 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 22:10:14.470 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:10:21.802 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 22:11:29.649 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:01:40.602 +01:00 [INF] Logger initialized
+2025-03-11 23:07:57.802 +01:00 [INF] Logger initialized
+2025-03-11 23:08:13.072 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:08:13.193 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:10:15.387 +01:00 [INF] Logger initialized
+2025-03-11 23:11:57.455 +01:00 [INF] Logger initialized
+2025-03-11 23:12:33.713 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:12:33.835 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:12:33.878 +01:00 [DBG] Model has an Error: Password - Message: Password cannot be empty.
+2025-03-11 23:14:08.440 +01:00 [INF] Logger initialized
+2025-03-11 23:14:16.889 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:14:17.008 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:14:17.183 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'password')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2(String password, Byte[] salt, Int32 iterations, HashAlgorithmName hashAlgorithm, Int32 outputLength)
+   at DAL.Utils.PasswordHasher.Hash(String password) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/Utils/PasswordHasher.cs:line 19
+   at Services.UserService.Update(String id, User entry) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/Services/UserService.cs:line 79
+   at AquariumAPI.Controllers.UserController.Update(String id, UserResource user) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/UserController.cs:line 75
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 23:16:50.873 +01:00 [INF] Logger initialized
+2025-03-11 23:16:56.554 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:16:56.727 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:18:06.293 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'password')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2(String password, Byte[] salt, Int32 iterations, HashAlgorithmName hashAlgorithm, Int32 outputLength)
+   at DAL.Utils.PasswordHasher.Hash(String password) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/DAL/Utils/PasswordHasher.cs:line 19
+   at Services.UserService.Update(String id, User entry)
+   at AquariumAPI.Controllers.UserController.Update(String id, UserResource user) in /Users/vinzentschmid/Documents/ADSWE/AquariumAPI/AquariumAPI/Controllers/UserController.cs:line 75
+   at lambda_method10(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-11 23:18:28.471 +01:00 [INF] Logger initialized
+2025-03-11 23:18:31.957 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:18:32.067 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:25:23.496 +01:00 [INF] Logger initialized
+2025-03-11 23:25:53.214 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:25:53.346 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:25:53.402 +01:00 [DBG] Model has an Error: Email - Message: Username cannot be empty.
+2025-03-11 23:26:12.361 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:26:12.385 +01:00 [DBG] Model has an Error: Email - Message: Username cannot be empty.
+2025-03-11 23:26:59.142 +01:00 [INF] Logger initialized
+2025-03-11 23:27:29.802 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:27:29.929 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:34:51.791 +01:00 [INF] Logger initialized
+2025-03-11 23:34:56.194 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:34:56.316 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:35:23.785 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:37:12.294 +01:00 [INF] Logger initialized
+2025-03-11 23:37:14.066 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:37:14.205 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:41:45.950 +01:00 [INF] Logger initialized
+2025-03-11 23:41:55.695 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:41:55.840 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:42:20.629 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:42:28.866 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:42:46.703 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:43:25.283 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:45:05.620 +01:00 [INF] Logger initialized
+2025-03-11 23:45:08.470 +01:00 [INF] Logger initialized
+2025-03-11 23:45:23.486 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:45:23.608 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:45:45.153 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:48:39.879 +01:00 [INF] Logger initialized
+2025-03-11 23:48:42.534 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:48:42.676 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:48:54.787 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:49:09.910 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:49:25.733 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:51:19.405 +01:00 [INF] Logger initialized
+2025-03-11 23:51:30.938 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-03-11 23:51:31.094 +01:00 [INF] Connected to database Aquarium2025
+2025-03-11 23:51:36.733 +01:00 [INF] Connected to database Aquarium2025

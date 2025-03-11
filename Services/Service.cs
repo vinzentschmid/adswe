@@ -86,13 +86,13 @@ public abstract class Service<TEntitiy> : IService<TEntitiy> where TEntitiy : En
             Log.Warning("Could not determine User");
         }
     }
-    public async Task<TEntitiy> Get(string id)
+    public Task<TEntitiy> Get(string id)
     {
-        return Repository.FindByIdAsync(id).Result;
+        return Task.FromResult(Repository.FindByIdAsync(id).Result);
     }
 
-    public async Task<List<TEntitiy>> Get()
+    public Task<List<TEntitiy>> Get()
     {
-        return Repository.FilterBy(x => true).ToList();
+        return Task.FromResult(Repository.FilterBy(x => true).ToList());
     }
 }

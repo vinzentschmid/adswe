@@ -1,3 +1,4 @@
+using System.Net.Http.Headers;
 using System.Security.Claims;
 using DAL;
 using Microsoft.AspNetCore.Authorization;
@@ -22,12 +23,12 @@ public class BaseController<T> : ControllerBase where T : Entity
             if (httpContextAccessor.HttpContext.User != null)
             {
                 var ClaimsPrincipal = httpContextAccessor.HttpContext.User;
-                IEnumerable<Claim> claims = ClaimsPrincipal.Claims;
+                var claims = ClaimsPrincipal.Claims;
                 
                 var email = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
 
                 if (email == null) return;
-                Task task2 = this.Service.Load(email);
+                var task2 = this.Service.Load(email);
                 task2.Wait();
             }
         }
@@ -39,5 +40,12 @@ public class BaseController<T> : ControllerBase where T : Entity
     public async Task<T> Get(String id)
     {
         return await this.Service.Get(id);
+    }
+    
+    [HttpGet("GetClaims")]
+    public IActionResult GetClaims()
+    {
+        var claims = User.Claims.Select(c => new { c.Type, c.Value }).ToList();
+        return Ok(claims);
     }
 }
